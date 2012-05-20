@@ -47,5 +47,8 @@
     <ClCompile Include="MultiplierTest.cpp">
       <Filter>MultiplierTest</Filter>
     </ClCompile>
+    <ClCompile Include="MultiplierTestFix.cpp">
+      <Filter>MultiplierTest</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

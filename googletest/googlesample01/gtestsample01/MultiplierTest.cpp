@@ -13,7 +13,7 @@ TEST(TestCaseMul1, TestMulSimple)
 TEST(TestCaseMul2, TestMulEQ)
 {
 	Multiplier m;
-
+	
 	EXPECT_EQ(1, m.mul(1,1));
 }
 
