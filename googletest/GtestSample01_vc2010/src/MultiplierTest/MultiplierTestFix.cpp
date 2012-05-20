@@ -12,13 +12,13 @@ public:
 	~MultiplierTest() {}
 
 	void SetUp() {
-		std::cout << "#### get new Multiplier ####" << std::endl;
+		std::cout << "#### SetUp new Multiplier ####" << std::endl;
 		mulp_ = new ::Multiplier;
 	}
 
 	void TearDown() {
 		delete mulp_;
-		std::cout << "#### delete Multiplier ####" << std::endl;
+		std::cout << "#### TearDown Multiplier ####" << std::endl;
 	}
 };
 

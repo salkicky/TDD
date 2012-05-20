@@ -20,5 +20,5 @@ TEST(TestCaseMul3, TestMulEX)
 {
 	Multiplier m;
 
-	ASSERT_EQ(3, m.mul(1,4)) << "‚±‚±‚ÅŽ¸”s‚·‚é";
+	ASSERT_NE(3, m.mul(1,4)) << "‚±‚±‚ÅŽ¸”s‚·‚é";
 }
