@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Multiplier">
+      <UniqueIdentifier>{14de7355-a806-4efa-a045-b61e3f9abd7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MultiplierTest">
+      <UniqueIdentifier>{06fc499d-5404-4973-a082-0db83aa09f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Multiplier">
+      <UniqueIdentifier>{63901133-3372-476f-b246-b476399edff7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Multiplier\Multiplier.cpp">
+      <Filter>ソース ファイル\Multiplier</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MultiplierTest\MultiplierTest.cpp">
+      <Filter>ソース ファイル\MultiplierTest</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MultiplierTest\MultiplierTestFix.cpp">
+      <Filter>ソース ファイル\MultiplierTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Multiplier\Multiplier.h">
+      <Filter>ヘッダー ファイル\Multiplier</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
