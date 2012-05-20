@@ -1,0 +1,12 @@
+# 
+.log
+.suo
+.ilk
+.rc
+.obj
+.tlog
+.idb
+.pdb
+
+#
+ipch/
