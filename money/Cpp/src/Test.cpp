@@ -3,6 +3,8 @@
 
 TEST(TestMultiplication, Test) {
 	Dollar five(5);
-	five.times(2);
-	ASSERT_EQ(10, five.amount) << five.amount << std::endl;
+	Dollar product = five.times(2);
+	ASSERT_EQ(10, product.amount);
+	product = five.times(3);
+	ASSERT_EQ(15, product.amount);
 }
