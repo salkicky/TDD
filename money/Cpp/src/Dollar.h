@@ -4,12 +4,15 @@ class Dollar {
 public:
 	int amount;
 
+	Dollar() {amount = 0;}
+
 	Dollar(int amount) {
 		this->amount = amount;
 	}
 
+
 	Dollar times(int multiplier) {
-		this->amount *= multiplier;
-		return NULL;
+		Dollar ap(this->amount * multiplier);
+		return ap;
 	}
 };
