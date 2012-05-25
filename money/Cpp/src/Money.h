@@ -4,6 +4,8 @@ class Money {
 public:
 	int amount;
 
+public:
 	Money() {}
 	virtual ~Money() {}
+
 };

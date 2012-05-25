@@ -16,11 +16,7 @@ public:
 	}
 
 	bool equals(Franc &object) {
-		Franc *franc = &object;
-		return amount == franc->amount;
-	}
-
-	bool operator==(Franc &other) {
-		return this->equals(other);
+		Money *money = &object;
+		return amount == money->amount;
 	}
 };

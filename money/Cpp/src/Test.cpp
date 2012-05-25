@@ -4,8 +4,8 @@
 
 TEST(TestMultiplication, Test) {
 	Dollar five(5);
-	ASSERT_TRUE(Dollar(10) == five.times(2));
-	ASSERT_TRUE(Dollar(15) == five.times(3));
+	ASSERT_TRUE(Dollar(10).equals(five.times(2)));
+	ASSERT_TRUE(Dollar(15).equals(five.times(3)));
 }
 
 TEST(TestEquqlity, Test) { 
@@ -14,6 +14,6 @@ TEST(TestEquqlity, Test) {
 
 TEST(TestFrancMultiplication, Test) {
 	Franc five(5);
-	ASSERT_TRUE(Franc(10) == five.times(2));
-	ASSERT_TRUE(Franc(15) == five.times(3));
+	ASSERT_TRUE(Franc(10).equals(five.times(2)));
+	ASSERT_TRUE(Franc(15).equals(five.times(3)));
 }

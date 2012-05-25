@@ -19,8 +19,4 @@ public:
 		Money *money = &object;
 		return amount == money->amount;
 	}
-
-	bool operator==(Dollar &other) {
-		return this->equals(other);
-	}
 };
