@@ -8,4 +8,7 @@ public:
 	Money() {}
 	virtual ~Money() {}
 
+	bool equals(Money &money) {
+		return amount == money.amount;
+	}
 };

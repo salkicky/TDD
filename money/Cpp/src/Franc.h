@@ -14,8 +14,4 @@ public:
 		Franc ap(this->amount * multiplier);
 		return ap;
 	}
-
-	bool equals(Money &money) {
-		return amount == money.amount;
-	}
 };

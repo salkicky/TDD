@@ -15,7 +15,4 @@ public:
 		return ap;
 	}
 
-	bool equals(Money &money) {
-		return amount == money.amount;
-	}
 };
