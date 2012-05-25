@@ -1,7 +1,7 @@
 #pragma once
 
 class Money {
-public:
+protected:
 	int amount;
 
 public:
