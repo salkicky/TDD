@@ -10,6 +10,9 @@ TEST(TestMultiplication, Test) {
 
 TEST(TestEquqlity, Test) { 
 	ASSERT_TRUE( Dollar(5).equals(Dollar(5)) );
+	ASSERT_FALSE( Dollar(5).equals(Dollar(6)) );
+	ASSERT_TRUE( Franc(5).equals(Franc(5)) );
+	ASSERT_FALSE( Franc(5).equals(Franc(6)) );
 }
 
 TEST(TestFrancMultiplication, Test) {
