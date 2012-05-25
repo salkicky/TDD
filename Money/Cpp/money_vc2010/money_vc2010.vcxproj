@@ -74,6 +74,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\PracticalVim\Capter2\list-of-links.html" />
+    <None Include="..\..\..\..\PracticalVim\Capter2\visual_mode\list-of-links.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Dollar.h" />
+    <ClInclude Include="..\src\Franc.h" />
+    <ClInclude Include="..\src\Money.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
