@@ -2,7 +2,7 @@
 
 #include "Money.h"
 
-class Dollar : private Money {
+class Dollar : public Money {
 public:
 	Dollar() {amount = 0;}
 
@@ -15,8 +15,7 @@ public:
 		return ap;
 	}
 
-	bool equals(Dollar &object) {
-		Money *money = &object;
-		return amount == money->amount;
+	bool equals(Money &money) {
+		return amount == money.amount;
 	}
 };
