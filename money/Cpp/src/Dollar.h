@@ -4,7 +4,6 @@
 
 class Dollar : public Money {
 public:
-	Dollar() {amount = 0;}
 
 	Dollar(int amount) {
 		this->amount = amount;

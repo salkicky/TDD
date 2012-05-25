@@ -5,7 +5,7 @@ protected:
 	int amount;
 
 public:
-	Money() {}
+	Money() : amount(0) {}
 	virtual ~Money() {}
 
 	bool equals(Money &money) {
