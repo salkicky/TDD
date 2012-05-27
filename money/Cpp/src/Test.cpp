@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include "Money.h"
 #include "Dollar.h"
 #include "Franc.h"
 

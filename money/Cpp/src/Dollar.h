@@ -5,9 +5,7 @@
 class Dollar : public Money {
 public:
 
-	Dollar(int amount) {
-		this->amount = amount;
-	}
+	Dollar(int amount) : Money(amount) {}
 
 	Dollar times(int multiplier) {
 		Dollar ap(this->amount * multiplier);
