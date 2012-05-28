@@ -23,3 +23,8 @@ TEST(TestFrancMultiplication, Test) {
 	ASSERT_TRUE(Franc(15).equals(five.times(3)));
 }
 
+TEST(TestCurrency, Test) {
+	ASSERT_STREQ("USD", Dollar(5).currency().c_str());
+	ASSERT_STREQ("FRN", Franc(5).currency().c_str());
+}
+

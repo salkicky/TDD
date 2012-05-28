@@ -1,6 +1,9 @@
 #pragma once
 
+#include <string>
 #include "Money.h"
+
+using namespace std;
 
 class Franc : public Money {
 public:
@@ -10,5 +13,9 @@ public:
 	Franc times(int multiplier) {
 		Franc ap(this->amount * multiplier);
 		return ap;
+	}
+
+	string currency() {
+		return "FRN";
 	}
 };
