@@ -18,3 +18,7 @@ TEST(TestCurrency, Test) {
 	ASSERT_STREQ("CHF", Money::franc(5).currency().c_str());
 }
 
+TEST(TestSimpleAddition, Test) {
+	Money sum = Money::dollar(5).plus(Money::dollar(5));
+	ASSERT_TRUE(Money::dollar(10).equals(sum));
+}
