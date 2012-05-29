@@ -36,4 +36,8 @@ public:
 		Money ap(this->amount * multiplier, curr);
 		return ap;
 	}
+
+	Money plus(const Money &other) {
+		return Money(this->amount + other.amount, this->curr);
+	}
 };
