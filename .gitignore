@@ -1,13 +1,16 @@
 # 
-.log
-.suo
-.ilk
-.rc
-.obj
-.tlog
-.idb
-.pdb
+*.log
+*.suo
+*.ilk
+*.rc
+*.obj
+*.tlog
+*.idb
+*.pdb
+*.ncb
+*.user
 
 #
 ipch/
 Debug/
+
