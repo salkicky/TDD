@@ -8,15 +8,13 @@ TEST(TestMultiplication, Test) {
 }
 
 TEST(TestEquqlity, Test) { 
-	ASSERT_TRUE( Money::dollar(5).equals(Money::dollar(5)) );
+	ASSERT_TRUE(  Money::dollar(5).equals(Money::dollar(5)) );
 	ASSERT_FALSE( Money::dollar(5).equals(Money::dollar(6)) );
-	ASSERT_TRUE( Money::franc(5).equals(Money::franc(5)) );
-	ASSERT_FALSE( Money::franc(5).equals(Money::franc(6)) );
-	ASSERT_FALSE( Money::franc(5).equals(Money::dollar(5)) );
+	ASSERT_FALSE( Money::franc(5).equals( Money::dollar(5)) );
 }
 
 TEST(TestCurrency, Test) {
 	ASSERT_STREQ("USD", Money::dollar(5).currency().c_str());
-	ASSERT_STREQ("FRN", Money::franc(5).currency().c_str());
+	ASSERT_STREQ("CHF", Money::franc(5).currency().c_str());
 }
 

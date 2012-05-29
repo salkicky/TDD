@@ -29,7 +29,7 @@ public:
 	}
 
 	static Money franc(int amount) {
-		return Money(amount, "FRN");
+		return Money(amount, "CHF");
 	}
 
 	Money times(int multiplier) {
