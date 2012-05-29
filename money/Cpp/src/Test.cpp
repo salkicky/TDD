@@ -4,9 +4,9 @@
 #include "Franc.h"
 
 TEST(TestMultiplication, Test) {
-	Dollar five(5);
-	ASSERT_TRUE(Dollar(10).equals(five.times(2)));
-	ASSERT_TRUE(Dollar(15).equals(five.times(3)));
+	Money five = Money::dollar(5);
+	ASSERT_TRUE(Money::dollar(10).equals(five.times(2)));
+	ASSERT_TRUE(Money::dollar(15).equals(five.times(3)));
 }
 
 TEST(TestEquqlity, Test) { 
@@ -18,9 +18,9 @@ TEST(TestEquqlity, Test) {
 }
 
 TEST(TestFrancMultiplication, Test) {
-	Franc five(5);
-	ASSERT_TRUE(Franc(10).equals(five.times(2)));
-	ASSERT_TRUE(Franc(15).equals(five.times(3)));
+	Money five = Money::franc(5);
+	ASSERT_TRUE(Money::franc(10).equals(five.times(2)));
+	ASSERT_TRUE(Money::franc(15).equals(five.times(3)));
 }
 
 TEST(TestCurrency, Test) {

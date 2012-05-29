@@ -8,14 +8,6 @@ using namespace std;
 class Franc : public Money {
 public:
 
-	Franc(int amount) : Money(amount) {}
+	Franc(int amount) : Money(amount, "FRN") {}
 
-	Franc times(int multiplier) {
-		Franc ap(this->amount * multiplier);
-		return ap;
-	}
-
-	string currency() {
-		return "FRN";
-	}
 };
