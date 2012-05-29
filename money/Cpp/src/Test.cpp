@@ -17,12 +17,6 @@ TEST(TestEquqlity, Test) {
 	ASSERT_FALSE( Franc(5).equals(Dollar(5)) );
 }
 
-TEST(TestFrancMultiplication, Test) {
-	Money five = Money::franc(5);
-	ASSERT_TRUE(Money::franc(10).equals(five.times(2)));
-	ASSERT_TRUE(Money::franc(15).equals(five.times(3)));
-}
-
 TEST(TestCurrency, Test) {
 	ASSERT_STREQ("USD", Dollar(5).currency().c_str());
 	ASSERT_STREQ("FRN", Franc(5).currency().c_str());
