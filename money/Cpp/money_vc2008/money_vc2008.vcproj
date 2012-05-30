@@ -199,6 +199,10 @@
 				RelativePath="..\src\Money.h"
 				>
 			</File>
+			<File
+				RelativePath="..\src\Sum.h"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="リソース ファイル"

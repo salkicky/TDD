@@ -26,3 +26,14 @@ TEST(TestSimpleAddition, Test) {
 	Money reduced = bank.reduce(sum, "USD");
 	ASSERT_TRUE(Money::dollar(10).equals(reduced));
 }
+
+TEST(TestPlusReturnsSum, Test) {
+
+	Money five = Money::dollar(5);
+	Expression result = five.plus(five);
+
+	Sum sum = (Sum)result;
+
+	ASSERT_TRUE(five.equals(sum.augend));
+	ASSERT_TRUE(five.equals(sum.addend));
+}
