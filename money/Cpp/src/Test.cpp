@@ -24,5 +24,5 @@ TEST(TestSimpleAddition, Test) {
 	Expression sum = five.plus(five);
 	Bank bank;
 	Money reduced = bank.reduce(sum, "USD");
-	ASSERT_TRUE(Money::dollar(10), reduced);
+	ASSERT_TRUE(Money::dollar(10).equals(reduced));
 }

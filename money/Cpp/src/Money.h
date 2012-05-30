@@ -39,7 +39,8 @@ public:
 		return ap;
 	}
 
-	Money plus(const Money &other) {
-		return Money(this->amount + other.amount, this->curr);
+	Expression plus(const Money &other) {
+		Money(this->amount + other.amount, this->curr);
+		return Expression();
 	}
 };
