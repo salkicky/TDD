@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "Money.h"
+#include "Bank.h"
 
 TEST(TestMultiplication, Test) {
 	Money five = Money::dollar(5);
@@ -19,6 +20,9 @@ TEST(TestCurrency, Test) {
 }
 
 TEST(TestSimpleAddition, Test) {
-	Money sum = Money::dollar(5).plus(Money::dollar(5));
-	ASSERT_TRUE(Money::dollar(10).equals(sum));
+	Money five = Money::dollar(5);
+	Expression sum = five.plus(five);
+	Bank bank;
+	Money reduced = bank.reduce(sum, "USD");
+	ASSERT_TRUE(Money::dollar(10), reduced);
 }

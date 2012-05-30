@@ -3,6 +3,8 @@
 #include <string>
 #include <typeinfo>
 
+#include "Expression.h"
+
 using namespace std;
 
 class Money {
