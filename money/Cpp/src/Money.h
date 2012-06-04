@@ -4,7 +4,6 @@
 #include <typeinfo>
 
 #include "Sum.h"
-#include "Expression.h"
 
 using namespace std;
 
@@ -40,7 +39,7 @@ public:
 		return ap;
 	}
 
-	Sum plus(const Money &other) {
+	Sum plus(Money &other) {
 		return Sum(this, other);
 	}
 };

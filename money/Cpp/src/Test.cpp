@@ -21,18 +21,17 @@ TEST(TestCurrency, Test) {
 
 TEST(TestSimpleAddition, Test) {
 	Money five = Money::dollar(5);
-	Expression sum = five.plus(five);
+	Sum sum = five.plus(five);
 	Bank bank;
-	Money reduced = bank.reduce(sum, "USD");
+	Money reduced = bank.reduce(&sum, "USD");
 	ASSERT_TRUE(Money::dollar(10).equals(reduced));
 }
 
 TEST(TestPlusReturnsSum, Test) {
 
 	Money five = Money::dollar(5);
-	Expression result = five.plus(five);
-
-	Sum sum = (Sum)result;
+	Sum sum = five.plus(five);
+	Expression &expression = &sum;
 
 	ASSERT_TRUE(five.equals(sum.augend));
 	ASSERT_TRUE(five.equals(sum.addend));
